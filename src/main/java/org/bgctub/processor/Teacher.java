@@ -25,9 +25,10 @@ public class Teacher{
         System.out.println("Teacher's Code Name: "+this.code);
         int count=0;
         for(String cnt: this.courseCodes){
-            if(!cnt.isEmpty()){
+            if(cnt!=null && !cnt.isEmpty()){
                 count++;
             }
+            //String s = null;
         }
         System.out.println("Teacher's Number of Courses: "+count);
         System.out.println("Teacher's Number of Students: "+this.studentRollNo.size());
