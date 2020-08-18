@@ -23,7 +23,13 @@ public class Teacher{
     public void display(){
         System.out.println("Teacher's Name: "+this.fullName);
         System.out.println("Teacher's Code Name: "+this.code);
-        System.out.println("Teacher's Number of Courses: "+this.courseCodes.length);
+        int count=0;
+        for(String cnt: this.courseCodes){
+            if(!cnt.isEmpty()){
+                count++;
+            }
+        }
+        System.out.println("Teacher's Number of Courses: "+count);
         System.out.println("Teacher's Number of Students: "+this.studentRollNo.size());
     }
 
