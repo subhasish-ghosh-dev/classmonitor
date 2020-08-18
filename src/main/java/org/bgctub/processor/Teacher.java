@@ -21,7 +21,10 @@ public class Teacher{
     }
 
     public void display(){
-        System.out.println("Teacher's Name: ");
+        System.out.println("Teacher's Name: "+this.fullName);
+        System.out.println("Teacher's Code Name: "+this.code);
+        System.out.println("Teacher's Number of Courses: "+this.courseCodes.length);
+        System.out.println("Teacher's Number of Students: "+this.studentRollNo.size());
     }
 
     public static void main(String[] args){
