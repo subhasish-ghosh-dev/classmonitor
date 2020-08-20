@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class Teacher{
     //Instance variables
     private String fullName;
+    Student st;
     private String code;
     private String[] courseCodes;
     private List<Integer>/*Generic*/ studentRollNo;//Wrapper type will be used in Generic
