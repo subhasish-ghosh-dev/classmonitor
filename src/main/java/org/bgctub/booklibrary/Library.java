@@ -22,13 +22,21 @@ public class Library {
         Student student2 = new Student(1903331);
 
         book1.borrow(student2);
+        book2.borrow(student1);
         
         Student[] _students={student1,student2};
         Book[] _books={book1,book2,book3,book4};
         Library lib = new Library(_books,_students);
         for(Book bk:lib.books){
-            if(bk.isBorrowed()!=null)System.out.println(bk.getIsbn()+" : "+bk.isBorrowed().getRollNo());
-            else System.out.println(bk.getIsbn()+" is available for borrow");
+            if(bk.isBorrowed()!=null){
+                System.out.println(bk.getIsbn()+" : "+bk.isBorrowed().getRollNo());
+                String roll = String.valueOf(bk.isBorrowed().getRollNo());
+                System.out.println((roll!=null)?roll.lastIndexOf("10"):-1);
+                System.out.println(roll.endsWith("30"));
+            }
+            else {
+                System.out.println(bk.getIsbn()+" is available for borrow");               
+            }
         }
         
         
