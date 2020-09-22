@@ -17,7 +17,7 @@ public class CustomerSearch {
         return this.customers;
     }
 
-    public Customer searchCustomerById(){
+    public Customer searchCustomerById(String code){
         
     }
 
